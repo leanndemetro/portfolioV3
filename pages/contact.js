@@ -25,8 +25,8 @@ export default function Example() {
       <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
         <div className=" bg-[url('/hero-img.jpg')] py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
           <div className="max-w-lg mx-auto">
-            <h2 className="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Contact</h2>
-            <p className="mt-3 text-lg leading-6 text-white">
+            <h2 className="text-shadow-lg text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Contact</h2>
+            <p className="text-shadow-lg mt-3 text-lg leading-6 text-white">
               For any enquiries, please feel free to reach out using any of the listed methods.
             </p>
             <dl className="mt-8 text-base text-white">
@@ -34,14 +34,14 @@ export default function Example() {
                 <dt className="sr-only">Phone number</dt>
                 <dd className="flex">
                   <PhoneIcon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3">(407) 885-9149</span>
+                  <span className="ml-3 text-shadow-lg">(407) 885-9149</span>
                 </dd>
               </div>
               <div className="mt-3">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
                   <MailIcon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3">demetroalyssa@gmail.com</span>
+                  <span className="ml-3 text-shadow-lg">demetroalyssa@gmail.com</span>
                 </dd>
               </div>
             </dl>
