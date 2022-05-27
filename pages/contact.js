@@ -32,6 +32,7 @@ export default function Example() {
         };
 
         const response = await axios(config);
+        console.log(response);
       
 
 
