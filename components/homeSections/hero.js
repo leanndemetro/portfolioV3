@@ -15,7 +15,7 @@ export default function HomeHero() {
           <p className="text-shadow-lg mt-6 text-xl  text-white max-w-3xl">
           Based out of Central Florida, 
           <br></br>
-          Alyssa De Metro is a Software Engineer at <a href="/https://dabblelab.com/" className="hover:italic" target="__blank">Dabble Lab.</a>
+          Alyssa De Metro is a Software Engineer at <a href="https://dabblelab.com/" className="hover:italic" target="__blank">Dabble Lab.</a>
           </p>
         </div>
       </div>
