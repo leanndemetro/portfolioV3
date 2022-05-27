@@ -15,7 +15,7 @@ export default function Example() {
           <div className="max-w-lg mx-auto">
             <h2 className="text-shadow-lg text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Contact</h2>
             <p className="text-shadow-lg mt-3 text-lg leading-6 text-white">
-              For any enquiries, please feel free to reach out using any of the listed methods.
+              For any enquiries, please feel free to reach out using any of the following methods.
             </p>
             <dl className="mt-8 text-base text-white">
               <div className="mt-6">

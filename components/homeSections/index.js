@@ -1,6 +1,8 @@
 import {Link} from 'react-scroll'
+import { useRouter } from 'next/router'
   
   export default function HomeNav() {
+    const router = useRouter()
     return (
       <header className="bg-black border-b-[1px] border-b-[#023368]">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
@@ -8,15 +10,15 @@ import {Link} from 'react-scroll'
             <div className="flex items-center">
               
               <div className="hidden ml-10 space-x-8 lg:block">
-              <Link activeClass="active" to="home" className="text-base font-medium text-white hover:text-indigo-200" spy={true} smooth={true}>Home</Link>
+              <button type="button" onClick={() => router.push('/')} className="text-base font-medium text-white hover:text-indigo-200" spy={true} smooth={true}>
+                  Home</button>
                   <Link to="about" className="text-base font-medium text-white hover:text-indigo-200" spy={true} smooth={true}>About</Link>
-                 
-                  <a key='tutorials' href='/tutorials' className="text-base font-medium text-white hover:text-indigo-200">
+                 <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-200">
                     Tutorials
-                  </a>
-                  <a key='contact' href='/contact' className="text-base font-medium text-white hover:text-indigo-200">
+                  </button>
+                  <button type="button" onClick={() => router.push('/contact')} className="text-base font-medium text-white hover:text-indigo-200">
                     Contact
-                  </a>
+                  </button>
               </div>
             </div>
             <div className="ml-10 space-x-4">
@@ -29,18 +31,16 @@ import {Link} from 'react-scroll'
             </div>
           </div>
           <div className="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
-           <a key='home' href='/' className="text-base font-medium text-white hover:text-indigo-50">
+           <button type="button" onClick={() => router.push('/')} className="text-base font-medium text-white hover:text-indigo-50">
                 Home
-              </a>
-           <button key='about' className="text-base font-medium text-white hover:text-indigo-50">
-           <Link to="about" spy={true} smooth={true}>About</Link>
               </button>
-           <a key='tutorials' href='/tutorials' className="text-base font-medium text-white hover:text-indigo-50">
+              <Link to="about" className="text-base font-medium text-white hover:text-indigo-50" spy={true} smooth={true}>About</Link>
+            <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-50">
                 Tutorials
-              </a>
-           <a key='contact' href='contact' className="text-base font-medium text-white hover:text-indigo-50">
+              </button>
+           <button type="button" onClick={() => router.push('/contact')} className="text-base font-medium text-white hover:text-indigo-50">
                 Contact
-              </a>
+              </button>
            
           </div>
         </nav>

@@ -1,12 +1,7 @@
-
-const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Tutorials', href: '/tutorials' },
-    { name: 'Contact', href: '/contact' }
-  ]
+import { useRouter } from 'next/router'
   
   export default function Nav() {
+    const router = useRouter()
     return (
       <header className="bg-black border-b-[1px] border-b-[#023368]">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
@@ -14,11 +9,16 @@ const navigation = [
             <div className="flex items-center">
               
               <div className="hidden ml-10 space-x-8 lg:block">
-                {navigation.map((link) => (
-                  <a key={link.name} href={link.href} className="text-base font-medium text-white hover:text-indigo-200">
-                    {link.name}
-                  </a>
-                ))}
+              <button type="button" onClick={() => router.push('/')} className="text-base font-medium text-white hover:text-indigo-200" spy={true} smooth={true}>
+                  Home</button>
+              <button type="button" onClick={() => router.push('/about')} className="text-base font-medium text-white hover:text-indigo-200" spy={true} smooth={true}>
+                  About</button>
+                <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-200">
+                    Tutorials
+                  </button>
+                  <button type="button" onClick={() => router.push('/contact')} className="text-base font-medium text-white hover:text-indigo-200">
+                    Contact
+                  </button>
               </div>
             </div>
             <div className="ml-10 space-x-4">
@@ -31,14 +31,18 @@ const navigation = [
             </div>
           </div>
           <div className="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
-            {navigation.map((link) => (
-              <a key={link.name} href={link.href} className="text-base font-medium text-white hover:text-indigo-50">
-                {link.name}
-              </a>
-            ))}
-            <a key='about' href='/about' className="text-base font-medium text-white hover:text-indigo-50">
+          <button type="button" onClick={() => router.push('/')} className="text-base font-medium text-white hover:text-indigo-50">
+                Home
+              </button>
+          <button type="button" onClick={() => router.push('/about')} className="text-base font-medium text-white hover:text-indigo-50">
                 About
-              </a>
+              </button>
+               <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-50">
+                Tutorials
+              </button>
+           <button type="button" onClick={() => router.push('/contact')} className="text-base font-medium text-white hover:text-indigo-50">
+                Contact
+              </button>
           </div>
         </nav>
       </header>
