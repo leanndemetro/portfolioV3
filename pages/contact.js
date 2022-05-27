@@ -1,23 +1,11 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+import Nav from '../components/nav'
+import Footer from '../components/footer'
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 
 export default function Example() {
   return (
+    <div className="flex flex-col h-screen font-sans font-extralight">
+    <Nav />
     <div className="relative bg-white">
       <div className="absolute inset-0">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
@@ -59,7 +47,7 @@ export default function Example() {
                   name="full-name"
                   id="full-name"
                   autoComplete="name"
-                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#023368] focus:border-[#023368] border-gray-300 rounded-md"
                   placeholder="Full name"
                 />
               </div>
@@ -72,7 +60,7 @@ export default function Example() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#023368] focus:border-[#023368] border-gray-300 rounded-md"
                   placeholder="Email"
                 />
               </div>
@@ -85,7 +73,7 @@ export default function Example() {
                   name="phone"
                   id="phone"
                   autoComplete="tel"
-                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#023368] focus:border-[#023368] border-gray-300 rounded-md"
                   placeholder="Phone"
                 />
               </div>
@@ -97,7 +85,7 @@ export default function Example() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#023368]focus:border-[#023368] border border-gray-300 rounded-md"
                   placeholder="Message"
                   defaultValue={''}
                 />
@@ -105,7 +93,7 @@ export default function Example() {
               <div>
                 <button
                   type="submit"
-                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-[#023368] hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-[#023368] hover:bg-[#023368] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#023368]"
                 >
                   Submit
                 </button>
@@ -114,6 +102,8 @@ export default function Example() {
           </div>
         </div>
       </div>
+    </div>
+    <Footer />
     </div>
   )
 }

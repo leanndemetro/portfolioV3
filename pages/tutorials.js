@@ -1,11 +1,15 @@
 import posts from "../assets/tutorialData.json";
+import Nav from "../components/nav";
+import Footer from "../components/footer";
 
 
 
 
 export default function Page () {
   return (  
-    <div className="relative bg-black pt-16 pb-20 px-4 sm:px-6 lg:pt-0 lg:pb-28 lg:px-8">
+    <div className="flex flex-col h-screen font-sans font-extralight">
+    <Nav />
+    <div className="flex-1 overflow-y-auto relative bg-black pt-16 pb-20 px-4 sm:px-6 lg:pt-0 lg:pb-28 lg:px-8">
       <div className="absolute inset-0">
         <div className="bg-black h-1/3 sm:h-2/3" />
       </div>
@@ -59,6 +63,8 @@ export default function Page () {
           ))}
         </div>
       </div>
+    </div>
+    <Footer />
     </div>
   )
 }
