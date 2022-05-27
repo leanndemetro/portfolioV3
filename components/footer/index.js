@@ -3,7 +3,7 @@ const navigation = {
     social: [
         {
             name: 'GitHub',
-            href: '#',
+            href: 'https://github.com/leanndemetro',
             icon: (props) => (
                 <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                     <path
@@ -16,7 +16,7 @@ const navigation = {
         },
         {
             name: 'LinkedIn',
-            href: '#',
+            href: 'https://www.linkedin.com/in/alyssademetro/',
             icon: (props) => (
                 <svg fill="currentColor" viewBox="0 0 20 20" {...props}>
                     <path
@@ -37,7 +37,7 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto py-8 px-4 overflow-hidden sm:px-6 lg:px-8">
                 <div className="flex justify-center space-x-6">
                     {navigation.social.map((item) => (
-                        <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+                        <a target="__blank" key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
                             <span className="sr-only">{item.name}</span>
                             <item.icon className="h-6 w-6" aria-hidden="true" />
                         </a>

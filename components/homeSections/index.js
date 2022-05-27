@@ -10,9 +10,9 @@ import { useRouter } from 'next/router'
             <div className="flex items-center">
               
               <div className="hidden ml-10 space-x-8 lg:block">
-              <button type="button" onClick={() => router.push('/')} className="text-base font-medium text-white hover:text-indigo-200" spy={true} smooth={true}>
+              <button type="button" onClick={() => router.push('/')} className="text-base font-medium text-white hover:text-indigo-200" smooth={true}>
                   Home</button>
-                  <Link to="about" className="text-base font-medium text-white hover:text-indigo-200" spy={true} smooth={true}>About</Link>
+                  <Link to="about" className="text-base font-medium text-white hover:text-indigo-200" smooth={true}>About</Link>
                  <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-200">
                     Tutorials
                   </button>
@@ -22,19 +22,16 @@ import { useRouter } from 'next/router'
               </div>
             </div>
             <div className="ml-10 space-x-4">
-              <a
-                href="#"
-                className="inline-block bg-[#023368] py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75"
-              >
-                Sign in
-              </a>
+            <svg xmlns="http://www.w3.org/2000/svg" className="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+  <path strokeLinecap="round" strokeLinejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+</svg> 
             </div>
           </div>
           <div className="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
            <button type="button" onClick={() => router.push('/')} className="text-base font-medium text-white hover:text-indigo-50">
                 Home
               </button>
-              <Link to="about" className="text-base font-medium text-white hover:text-indigo-50" spy={true} smooth={true}>About</Link>
+              <Link to="about" className="text-base font-medium text-white hover:text-indigo-50" smooth={true}>About</Link>
             <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-50">
                 Tutorials
               </button>
