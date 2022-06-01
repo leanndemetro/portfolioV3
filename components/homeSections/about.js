@@ -64,7 +64,7 @@ export default function About() {
                     <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Technical Skills</h2>
                         <p className="sm:text-base md:text-lg">
                         {skills.map((skill) => (
-                            <a className="hover:italic cursor-pointer" target="__blank" href={skill.href}>{skill.name} - </a>  
+                            <a key={skill.name} className="hover:italic cursor-pointer" target="__blank" href={skill.href}>{skill.name} - </a>  
                         ))}
                         <span>and more...</span>
                         </p>
