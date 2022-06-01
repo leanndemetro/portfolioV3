@@ -10,9 +10,9 @@ import { useRouter } from 'next/router'
             <div className="flex items-center">
               
               <div className="hidden ml-10 space-x-8 lg:block">
-              <button type="button" onClick={() => router.push('/')} className="text-base font-medium text-white hover:text-indigo-200" smooth={true}>
+              <button type="button" onClick={() => router.push('/')} className="text-base font-medium text-white hover:text-indigo-200" smooth={+true}>
                   Home</button>
-              <button type="button" onClick={() => router.push('/about')} className="text-base font-medium text-white hover:text-indigo-200" smooth={true}>
+              <button type="button" onClick={() => router.push('/about')} className="text-base font-medium text-white hover:text-indigo-200" smooth={+true}>
                   About</button>
                 <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-200">
                     Tutorials

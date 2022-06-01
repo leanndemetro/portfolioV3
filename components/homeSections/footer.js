@@ -31,10 +31,10 @@ const navigation = {
     ],
 }
 
-export default function Footer() {
+export default function HomeFooter() {
     return (
-        <footer className="bg-black border-t-[1px]  border-t-[#023368]">
-            <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <footer className="bg-black border-t-[1px] border-t-[#023368]">
+            <div className="max-w-7xl mx-auto py-8 px-4 overflow-hidden sm:px-6 lg:px-8">
                 <div className="flex justify-center space-x-6">
                     {navigation.social.map((item) => (
                         <a target="__blank" key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">

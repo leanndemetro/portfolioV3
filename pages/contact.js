@@ -39,7 +39,7 @@ export default function Example() {
 
     };
     return (
-        <div className="flex flex-col h-screen font-sans font-extralight">
+        <div className="flex flex-col h-screen bg-black font-sans font-extralight">
             <Nav />
             <div className="relative bg-black">
                 <div className="absolute inset-0">

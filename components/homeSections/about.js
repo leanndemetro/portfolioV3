@@ -1,30 +1,12 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
+import skills from "../../assets/skillsData.json"
+
 const people = [
     {
         name: 'Alyssa De Metro',
         role: 'Full-Stack Software Developer',
         imageUrl:
-            '/images/AlyssaDeMetro.jpg',
-        bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-        twitterUrl: '#',
-        linkedinUrl: '#',
+            '/images/AlyssaDeMetro.jpg'
     },
-    // More people...
 ]
 
 export default function About() {
@@ -64,7 +46,7 @@ export default function About() {
                         </ul>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-8 pt-6">
+                <div className="grid grid-cols-2 md:pt-[80px] pb-0 gap-8 pt-6">
                     <div className="space-y-5 col-span-1 sm:space-y-4">
                         <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Education</h2>
                         <p className="text-lg text-white">
@@ -80,7 +62,12 @@ export default function About() {
                     </div>
                     <div className="space-y-5 text-white col-span-1 sm:space-y-4">
                     <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Technical Skills</h2>
-                        <p className="text-lg">Node.js - JavaScript - React.js - Next.js - CI/CD (Github Actions) - Git / Github / Jira - TypeScript - AWS - Alexa - ASK CLI - Amazon APL - Lambda - Vercel - Heroku - Tailwind CSS - Various UI kits - JQuery - noSQL - mySQL - PostgreSQL - Express.js - Apollo Server / GraphQL - Prisma - Hasura - Cypress - Docker - Twilio - Figma - Dialogflow - MongoDB - NextAuth.js and more..</p>
+                        <p className="text-lg">
+                        {skills.map((skill) => (
+                            <a className="hover:italic cursor-pointer" target="__blank" href={skill.href}>{skill.name} - </a>  
+                        ))}
+                        <span>and more...</span>
+                        </p>
                     </div>
                 </div>
             </div>

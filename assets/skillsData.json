@@ -1,0 +1,142 @@
+[
+    {
+      "name" : "Node.js",
+      "href": "https://nodejs.org/en/"
+    },
+    {
+      "name" : "JavaScript",
+      "href": "https://www.javascript.com/"
+    },
+    {
+      "name" : "React.js",
+      "href": "https://reactjs.org/"
+    },
+    {
+      "name" : "Next.js",
+      "href": "https://nextjs.org/"
+    },
+    {
+      "name" : "CI/CD (Github Actions)",
+      "href": "https://docs.github.com/en/actions"
+    },
+    {
+      "name" : "Git",
+      "href": "https://git-scm.com/"
+    },
+    {
+      "name" : "Github",
+      "href": "https://github.com/"
+    },
+    {
+      "name" : "Jira",
+      "href": "https://jira.com/"
+    },
+    {
+      "name" : "TypeScript",
+      "href": "https://www.typescriptlang.org/"
+    },
+    {
+      "name" : "AWS",
+      "href": "https://aws.amazon.com/"
+    },
+    {
+      "name" : "Alexa",
+      "href": "https://developer.amazon.com/en-US/alexa"
+    },
+    {
+      "name" : "ASK ClI",
+      "href": "https://developer.amazon.com/en-US/docs/alexa/smapi/ask-cli-intro.html"
+    },
+    {
+      "name" : "Amazon APL",
+      "href": "https://developer.amazon.com/en-US/docs/alexa/alexa-design/apl.html"
+    },
+    {
+      "name" : "AWS Lambda",
+      "href": "https://developer.amazon.com/en-US/docs/alexa/alexa-design/apl.html"
+    },
+    {
+      "name" : "Vercel",
+      "href": "https://vercel.com/"
+    },
+    {
+      "name" : "Heroku",
+      "href": "http://heroku.com/"
+    },
+    {
+      "name" : "CSS",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "name" : "Tailwind CSS - various UI Kits",
+      "href": "https://tailwindcss.com/"
+    },
+    {
+      "name" : "JQuery",
+      "href": "https://jquery.com/"
+    },
+    {
+      "name" : "noSQL",
+      "href": "https://www.mongodb.com/nosql-explained"
+    },
+    {
+      "name" : "mySQL",
+      "href": "https://www.mysql.com/"
+    },
+    {
+      "name" : "PostgreSQL",
+      "href": "https://www.postgresql.org/"
+    },
+    {
+      "name" : "Express.js",
+      "href": "https://expressjs.com/"
+    },
+    {
+      "name" : "Apollo Server",
+      "href": "https://www.apollographql.com/docs/apollo-server/"
+    },
+    {
+      "name" : "GraphQL",
+      "href": "https://graphql.org/"
+    },
+    {
+      "name" : "Prisma",
+      "href": "https://www.prisma.io/"
+    },
+    {
+      "name" : "Hasura",
+      "href": "https://hasura.io/"
+    },
+    {
+      "name" : "Cypress",
+      "href": "https://www.cypress.io/"
+    },
+    {
+      "name" : "Docker",
+      "href": "https://www.docker.com/"
+    },
+    {
+      "name" : "Twilio",
+      "href": "https://www.twilio.com/"
+    },
+    {
+      "name" : "JWT",
+      "href": "https://jwt.io/"
+    },
+    {
+      "name" : "Figma",
+      "href": "https://www.figma.com/"
+    },
+    {
+      "name" : "Dialogflow",
+      "href": "https://cloud.google.com/dialogflow/docs"
+    },
+    {
+      "name" : "MongoDB",
+      "href": "https://www.mongodb.com/"
+    },
+    {
+      "name" : "NextAuth.js",
+      "href": "https://next-auth.js.org/"
+    }
+]

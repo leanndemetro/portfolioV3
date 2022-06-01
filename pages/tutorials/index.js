@@ -1,11 +1,11 @@
-import posts from "../assets/tutorialData.json";
-import Nav from "../components/nav";
-import Footer from "../components/footer";
+import posts from "../../assets/tutorialData.json";
+import Nav from "../../components/nav";
+import Footer from "../../components/footer";
 
 
 
 
-export default function Page () {
+export default function Tutorials () {
   return (  
     <div className="flex flex-col h-screen font-sans font-extralight">
     <Nav />

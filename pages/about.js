@@ -1,5 +1,6 @@
 import Nav from '../components/nav';
 import Footer from '../components/footer';
+import skills from "../assets/skillsData.json"
 
 const people = [
     {
@@ -53,7 +54,7 @@ export default function About() {
                         </ul>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-8 pt-6">
+                <div className="md:pt-[80px] pt-6 pb-0 md:pb-20 grid grid-cols-2 gap-8 ">
                     <div className="space-y-5 col-span-1 sm:space-y-4">
                         <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Education</h2>
                         <p className="text-lg text-white">
@@ -69,8 +70,14 @@ export default function About() {
                     </div>
                     <div className="space-y-5 text-white col-span-1 sm:space-y-4">
                     <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Technical Skills</h2>
-                        <p className="text-lg">Node.js - JavaScript - React.js - Next.js - CI/CD (Github Actions) - Git / Github / Jira - TypeScript - AWS - Alexa - ASK CLI - Amazon APL - Lambda - Vercel - Heroku - Tailwind CSS - Various UI kits - JQuery - noSQL - mySQL - PostgreSQL - Express.js - Apollo Server / GraphQL - Prisma - Hasura - Cypress - Docker - Twilio - Figma - Dialogflow - MongoDB - NextAuth.js and more..</p>
-                    </div>
+                        <p className="text-lg">
+                        {skills.map((skill) => (
+                            <a className="hover:italic cursor-pointer" target="__blank" href={skill.href}>{skill.name} - </a>  
+                        ))}
+                        <span>and more...</span>
+                        </p>
+                    
+                        </div>
                 </div>
             </div>
         </div>
