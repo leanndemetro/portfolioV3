@@ -1,5 +1,6 @@
 import { gql } from "apollo-server-core";
 
+
 const contactFormService = {
     schema: gql`
     type contactSubmission {
