@@ -84,8 +84,9 @@ export default function Example() {
                                         name="full-name"
                                         id="full-name"
                                         autoComplete="name"
-                                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#023368] focus:border-[#023368] border-gray-300 rounded-md"
+                                        className="cursor-not-allowed block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#023368] focus:border-[#023368] border-gray-300 rounded-md"
                                         placeholder="Full name"
+                                        disabled
                                     />
                                 </div>
                                 <div>
@@ -99,8 +100,9 @@ export default function Example() {
                                         name="email"
                                         type="email"
                                         autoComplete="email"
-                                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#023368] focus:border-[#023368] border-gray-300 rounded-md"
+                                        className="cursor-not-allowed block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#023368] focus:border-[#023368] border-gray-300 rounded-md"
                                         placeholder="Email"
+                                        disabled
                                     />
                                 </div>
                                 <div>
@@ -114,8 +116,9 @@ export default function Example() {
                                         name="phone"
                                         id="phone"
                                         autoComplete="tel"
-                                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#023368] focus:border-[#023368] border-gray-300 rounded-md"
+                                        className="cursor-not-allowed block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#023368] focus:border-[#023368] border-gray-300 rounded-md"
                                         placeholder="Phone"
+                                        disabled
                                     />
                                 </div>
                                 <div>
@@ -128,15 +131,17 @@ export default function Example() {
                                         id="message"
                                         name="message"
                                         rows={4}
-                                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#023368]focus:border-[#023368] border border-gray-300 rounded-md"
+                                        className="cursor-not-allowed block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#023368]focus:border-[#023368] border border-gray-300 rounded-md"
                                         placeholder="Message"
+                                        disabled
                                     />
                                 </div>
                                 <div>
                                     <button
                                         onClick={handleSubmit}
                                         type="submit"
-                                        className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-[#023368] hover:bg-[#023368] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#023368]"
+                                        disabled
+                                        className="cursor-not-allowed inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-[#023368] hover:bg-[#023368] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#023368]"
                                     >
                                         Submit
                                     </button>

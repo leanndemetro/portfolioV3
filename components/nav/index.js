@@ -14,9 +14,9 @@ import { useRouter } from 'next/router'
                   Home</button>
               <button type="button" onClick={() => router.push('/about')} className="text-base font-medium text-white hover:text-indigo-200" smooth={+true}>
                   About</button>
-                <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-200">
+                {/* <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-200">
                     Tutorials
-                  </button>
+                  </button> */}
                   <button type="button" onClick={() => router.push('/contact')} className="text-base font-medium text-white hover:text-indigo-200">
                     Contact
                   </button>
