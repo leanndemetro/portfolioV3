@@ -62,7 +62,7 @@ export default function About() {
                     </div>
                     <div className="space-y-5 text-white col-span-1 sm:space-y-4">
                     <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Technical Skills</h2>
-                        <p className="text-lg">
+                        <p className="sm:text-base md:text-lg">
                         {skills.map((skill) => (
                             <a className="hover:italic cursor-pointer" target="__blank" href={skill.href}>{skill.name} - </a>  
                         ))}
