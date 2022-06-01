@@ -32,9 +32,9 @@ import { useRouter } from 'next/router'
                 Home
               </button>
               <Link to="about" className="text-base font-medium text-white hover:text-indigo-50" smooth={+true}>About</Link>
-            <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-50">
+            {/* <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-50">
                 Tutorials
-              </button>
+              </button> */}
            <button type="button" onClick={() => router.push('/contact')} className="text-base font-medium text-white hover:text-indigo-50">
                 Contact
               </button>

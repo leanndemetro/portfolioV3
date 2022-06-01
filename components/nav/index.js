@@ -35,9 +35,9 @@ import { useRouter } from 'next/router'
           <button type="button" onClick={() => router.push('/about')} className="text-base font-medium text-white hover:text-indigo-50">
                 About
               </button>
-               <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-50">
+               {/* <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-50">
                 Tutorials
-              </button>
+              </button> */}
            <button type="button" onClick={() => router.push('/contact')} className="text-base font-medium text-white hover:text-indigo-50">
                 Contact
               </button>
