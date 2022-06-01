@@ -23,7 +23,7 @@ export default function About() {
                             In 2020 she completed the University of Central Florida Full-Stack Web Developer Bootcamp, and began work as a freelance developer for local non-profits and small businesses. Since November of 2021 she has worked full time as a Full-Stack Software Engineer at Dabble Lab.
                             <br></br>
                             <br></br>
-                            During this period she has found her true passion for programming, as well as for research and learning new technologies. Her current role includes working with a variety of large Global Companies, often using different technology stacks and languages daily. She has a love for techinical writing, creating documentation and tutorials, and a passion for teaching and assisting others on their programming journey.
+                            During this period she has found her true passion for programming, as well as for research and learning new technologies. Her current role includes working with a variety of large Global Companies, often using different technology stacks and languages daily. She has a love for technical writing, creating documentation and tutorials, and a passion for teaching and assisting others on their programming journey.
                         </p>
                     </div>
                     <div className="lg:col-span-1">
