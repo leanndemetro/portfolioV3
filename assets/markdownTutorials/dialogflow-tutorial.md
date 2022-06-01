@@ -4,7 +4,7 @@ date: 2021/11/4
 description: Setting up a fulfillment with Dialogflow using webhooks (without inline editor)
 tag: Dialogflow Webhooks Fulfillment 
 author: Alyssa De Metro
-src: /images/posts/dialogflow-tutorial/dialogflow-tutorial1.jpeg
+src: /public/images/posts/dialogflow-tutorial/dialogflow-tutorial1.jpeg
 ---
 
 Today were going to walk through the steps to create a new Fulfillment within Dialogflow using the free option, webhooks.
@@ -73,11 +73,11 @@ npm start
 
 Enter the follwing information into Postman and press send to activate a POST request.
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial2.jpeg) 
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial2.jpeg) 
 
 You should see the following output within your terminal, this means your server is functioning correctly.
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial3.jpeg) 
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial3.jpeg) 
 
 Now, navigate to your index.js file and add in a function to define your fulfillment. Create a new agent using a WebhookClient instance, and add a function to define your desired action. 
 
@@ -106,38 +106,38 @@ dialogflowFulfillment(request, response)
 
 Navigate to your dialogflow console, click on intents. Select the intent call "Default Welcome Intent".
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial4.jpeg) 
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial4.jpeg) 
 
 Now, scroll down and open the fulfillments section, select Enable webhook call for this intent.
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial5.jpeg) 
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial5.jpeg) 
 
 Use the sidebar on the right to type Hi, and press enter, then select Diagnostic info.
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial6.jpeg) 
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial6.jpeg) 
 
 
 Click the Fulfillment request tab and copy raw response.
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial7.jpeg) 
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial7.jpeg) 
 
 Navigate to Postman, go to the body tab, select raw and JSON and pase the fulfillment request into it. Press send and see your pre-defined response.
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial8.jpeg) 
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial8.jpeg) 
 
 Now, return to your terminal and run ngrok 3000, copy the https forwarding address.
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial9.jpeg) 
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial9.jpeg) 
 
 
 Return to Postman and replace your localhost URL with your copied ngrok one, and hit send. You should recieve your pre-defined output just as before.
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial10.jpeg) 
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial10.jpeg) 
 
 Now, copy the full url from Postman with the /dialogflow-fulfillment endpoint added to it and navigate to the fulfillment tab within Dialogflow. Enable webhook fulfillment, paste your ngrok URL and save.
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial11.jpeg) 
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial11.jpeg) 
 
 Now, try typing hi into the right sidebar once again, and see Dialogflow return your desired output!
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial12.jpeg) 
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial12.jpeg) 

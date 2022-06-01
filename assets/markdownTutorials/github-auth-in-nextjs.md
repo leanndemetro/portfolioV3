@@ -4,12 +4,12 @@ date: 2021/10/13
 description: Using Nextauth.js to create login functionality via Github
 tag: tutorial, next-auth.js
 author: Alyssa De Metro
-src: /images/posts/github-auth-in-nextjs/github-auth-in-nextjs-1.jpeg
+src: /public/images/posts/github-auth-in-nextjs/github-auth-in-nextjs-1.jpeg
 ---
 
 Creating login functionality within a Next.js application using the NextAuth.js Github provider.
 
-![](/images/posts/github-auth-in-nextjs/github-auth-in-nextjs-1.jpeg)
+![](/public/images/posts/github-auth-in-nextjs/github-auth-in-nextjs-1.jpeg)
 
 Today were going to walk through the steps to create login functionality within a Next.js application using the Next-Auth.js Github provider.
 
@@ -43,19 +43,19 @@ SECRET=456ce5acdcec2819034320cf2d2221b2
 
 Now, navigate to <a target="__blank" href="https://github.com/">Github.com</a>, and click on settings
 
-![](/images/posts/github-auth-in-nextjs/github-auth-in-nextjs-2.jpeg)
+![](/public/images/posts/github-auth-in-nextjs/github-auth-in-nextjs-2.jpeg)
 
 Then, navigate to developer settings
 
-![](/images/posts/github-auth-in-nextjs/github-auth-in-nextjs-3.jpeg)
+![](/public/images/posts/github-auth-in-nextjs/github-auth-in-nextjs-3.jpeg)
 
 From there, navigate to Oauth apps, and then select new Oauth app, fill out the form as follows, and register your application:
 
-![](/images/posts/github-auth-in-nextjs/github-auth-in-nextjs-4.jpeg)
+![](/public/images/posts/github-auth-in-nextjs/github-auth-in-nextjs-4.jpeg)
 
 From the next page, copy the Client Id and paste it in as the value of GITHUB_ID, and generate a new Client Secret, copy and paste it as the value of GITHUB_SECRET
 
-![](/images/posts/github-auth-in-nextjs/github-auth-in-nextjs-5.jpeg)
+![](/public/images/posts/github-auth-in-nextjs/github-auth-in-nextjs-5.jpeg)
 
 The values below are mock values, but this is an example of what your .env.local file should look like.
 

@@ -4,7 +4,7 @@ date: 2022/03/15
 description: several example GraphQL API Query and Mutation requests using a variety of HTTP clients
 tag: tutorial
 author: Alyssa De Metro
-src: /images/posts/github-auth-in-nextjs/github-auth-in-nextjs-1.jpeg
+src: /public/images/posts/github-auth-in-nextjs/github-auth-in-nextjs-1.jpeg
 ---
 
 

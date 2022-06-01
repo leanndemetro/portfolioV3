@@ -4,7 +4,7 @@ date: 2021/11/4
 description: A guide to getting set up with the ASK CLI
 tag: alexa ASK CLI 
 author: Alyssa De Metro
-src: /images/posts/askcli-tutorial1/askcli-image1.jpeg
+src: /public/images/posts/askcli-tutorial1/askcli-image1.jpeg
 ---
 
 ### Today were going to walk through the steps to getting set up with the Alexa Skills Kit Command Line Interface, or ASK CLI.
@@ -69,18 +69,18 @@ Now, navigate to console.aws.amazon.com, click on the All Servives tab, and unde
 
 Paste the JSON copied previously inside the JSON tab, removing all previous code. 
 
-![](/images/posts/askcli-tutorial1/askcli-image2.jpeg)
+![](/public/images/posts/askcli-tutorial1/askcli-image2.jpeg)
 
 Click Next. Fill in the details as you see fit. Click create policy.
 
 Now, from the left sidebar menu, select users, and then create user. Fill out the details, select Access key - Programmatic access as well as Password - AWS Management Console access, choose the password and login settings you desire, and click next, permissions.
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial3.jpeg)
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial3.jpeg)
 
 
 Select attach existing policy directly, find your newly created policy and select it.
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial4.jpeg)
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial4.jpeg)
 
 
 Click next, tags, add if desired, otherwise review, and click create user. Copy your secret key and save it in a secret location, and make note of your access key ID as well.
@@ -110,8 +110,8 @@ ask deploy
 
 When you see the message "skill is enabled successfully" navigate to developer.amazon.com and click on the Alexa tab in the top left corner, go to the right top corner and open the drop down menu, select Alexa developer console. You should see your newly created skill at this location.
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial5.jpeg)
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial5.jpeg)
 
 Now, navigate to aws.amazon.com, and sign in to the console. Select Lambda from the list of services. Once the lambda console opens, ensure your location is set to the default (US East (N. Virginia)us-east-1), and you should see your newly deployed Lambda function!
 
-![](/images/posts/dialogflow-tutorial/dialogflow-tutorial6.jpeg)
+![](/public/images/posts/dialogflow-tutorial/dialogflow-tutorial6.jpeg)

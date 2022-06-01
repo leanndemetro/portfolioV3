@@ -4,7 +4,7 @@ date: 2021/11/9
 description: Learn how to schedule AWS Lambda functions using CRON.
 tag: AWS Lambda CRON
 author: Alyssa De Metro
-src: /images/posts/scheduling-lambda-functions-196/scheduling-lambda-functions.png
+src: /public/images/posts/scheduling-lambda-functions-196/scheduling-lambda-functions.png
 ---
 
 Today we're going to use a ***[CRON expression]()*** to schedule an ***[AWS Lambda function.](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-concepts.html#gettingstarted-concepts-function)***

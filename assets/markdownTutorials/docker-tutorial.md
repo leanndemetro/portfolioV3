@@ -4,7 +4,7 @@ date: 2021/11/3
 description: Setting up Docker with a Node.js application
 tag: docker node.js
 author: Alyssa De Metro
-src: /images/posts/docker-tutorial/docker-tutorial1.jpeg
+src: /public/images/posts/docker-tutorial/docker-tutorial1.jpeg
 ---
 Setting up Docker with a Node.js Application in 5 minutes.
 Today were going to walk through the steps to create a new Docker image via a Node.js application.
@@ -55,7 +55,7 @@ node index.js
 
 You should see the following output.
 
-![](/images/posts/docker-tutorial/docker-tutorial2.jpeg)
+![](/public/images/posts/docker-tutorial/docker-tutorial2.jpeg)
 
 In order to find which version of Node your local system is using, run the command 
 
@@ -96,6 +96,6 @@ docker run -p 3001:3000 docker-tutorial
 
 Now, navigate to http://localhost:3001/ and you should see your application's output once again.
 
-![](/images/posts/docker-tutorial/docker-tutorial3.jpeg)
+![](/public/images/posts/docker-tutorial/docker-tutorial3.jpeg)
 
 
