@@ -32,7 +32,6 @@ export default function Example() {
         };
 
         const response = await axios(config);
-        router.push("/");
         console.log(response)
       
 
