@@ -5,14 +5,14 @@ import axios from "axios";
 import { useState } from "react";
 import { useRouter } from 'next/router'
 
-export default function Example() {
-    const router = useRouter()
+export default function Contact() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [message, setMessage] = useState("");
-
+    const router = useRouter();
     const handleSubmit = async (e) => {
+        e.preventDefault()
         var data = JSON.stringify({
             query: `mutation{
       createcontactSubmission(name:"${name}",email:"${email}", phone:"${phone}", message:"${message}"){
@@ -30,13 +30,10 @@ export default function Example() {
             },
             data: data,
         };
-
         const response = await axios(config);
-        console.log(response)
-      
-
-
-    };
+        router.push("/success");
+        };
+   
     return (
         <div className="flex flex-col h-screen bg-black font-sans font-extralight">
             <Nav />
@@ -139,7 +136,6 @@ export default function Example() {
                                     <button
                                         onClick={handleSubmit}
                                         type="submit"
-                                      
                                         className=" inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-[#023368] hover:bg-[#023368] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#023368]"
                                     >
                                         Submit
