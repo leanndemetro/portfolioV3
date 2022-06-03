@@ -53,7 +53,7 @@
     },
     {
       "name" : "AWS Lambda",
-      "href": "https://developer.amazon.com/en-US/docs/alexa/alexa-design/apl.html"
+      "href": "https://aws.amazon.com/lambda/"
     },
     {
       "name" : "Vercel",
