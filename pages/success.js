@@ -17,7 +17,7 @@ export default function Success() {
                 </div>
                 <div className="relative max-w-7xl">
                     <div className="w-screen h-screen bg-[url('/hero-img.jpg')] justify-center flex items-center">
-                        <p className="text-shadow-lg text-center text-white text-4xl">Thank you for your message
+                        <p className="px-4 text-shadow-lg text-center text-white text-4xl">Thank you for your message
                         <br></br>
                         <span className="text-base md:text-2xl">Keep an eye out for a response soon!</span></p>
                     </div>
