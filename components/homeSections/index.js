@@ -12,7 +12,7 @@ import { useRouter } from 'next/router'
               <div className="hidden ml-10 space-x-8 lg:block">
               <button type="button" onClick={() => router.push('/')} className="text-base font-medium text-white hover:text-indigo-200" smooth={+true}>
                   Home</button>
-                  <Link to="about" className="text-base font-medium text-white hover:text-indigo-200" smooth={+true}>About</Link>
+                  <Link to="about" className="cursor-pointer text-base font-medium text-white hover:text-indigo-200" smooth={+true}>About</Link>
                  {/* <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-200">
                     Tutorials
                   </button> */}
@@ -31,7 +31,7 @@ import { useRouter } from 'next/router'
            <button type="button" onClick={() => router.push('/')} className="text-base font-medium text-white hover:text-indigo-50">
                 Home
               </button>
-              <Link to="about" className="text-base font-medium text-white hover:text-indigo-50" smooth={+true}>About</Link>
+              <Link to="about" className="cursor-pointer text-base font-medium text-white hover:text-indigo-50" smooth={+true}>About</Link>
             {/* <button type="button" onClick={() => router.push('/tutorials')} className="text-base font-medium text-white hover:text-indigo-50">
                 Tutorials
               </button> */}
