@@ -19,7 +19,7 @@ export default function Success() {
                     <div className="w-screen h-screen bg-[url('/hero-img.jpg')] justify-center flex items-center">
                         <p className="text-shadow-lg text-center text-white text-4xl">Thank you for your message
                         <br></br>
-                        <span className="text-2xl">Keep an eye out for a response soon!</span></p>
+                        <span className="text-base md:text-2xl">Keep an eye out for a response soon!</span></p>
                     </div>
                 </div>
             </div>
