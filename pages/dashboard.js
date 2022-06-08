@@ -47,7 +47,6 @@ export default function Dashboard() {
       };
 
     const handleClick = event => {
-    console.log(event.target.id)
     setId(event.target.id);
     handleSubmit();
   };
