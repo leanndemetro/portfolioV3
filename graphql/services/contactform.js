@@ -13,7 +13,14 @@ const contactFormService = {
 
     extend type Mutation {
       createcontactSubmission(name: String!, email: String!, phone: String, message: String!): contactSubmission
+      deletecontactSubmission(id: Int!): DeletePeopleResponse 
     }
+
+  
+    type DeletePeopleResponse {
+      id: Int
+    }
+  
   `,
     resolvers: {
         Mutation: {
@@ -24,6 +31,14 @@ const contactFormService = {
                         email: args.email,
                         phone: args.phone,
                         message: args.message,
+                    },
+                });
+            },
+
+            deletecontactSubmission: (_, args, ctx) => {
+                return ctx.prisma.contactSubmission.delete({
+                    where: {
+                        id: args.id,
                     },
                 });
             },
