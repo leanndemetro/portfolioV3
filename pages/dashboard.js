@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import { useRouter } from "next/router";
 
 
 
 
 export default function Dashboard() {
     const [posts, setPosts] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const idToDelete = [];
+    const [ID, setID] = useState("");
+
+
 
     useEffect(() => {
         async function fetchData() {
@@ -28,7 +28,7 @@ export default function Dashboard() {
         event.preventDefault();
         var data = JSON.stringify({
             query: `mutation{
-        deletecontactSubmission(id: ${idToDelete} ){
+        deletecontactSubmission(id: ${ID} ){
          id
         }
         }`,
@@ -48,38 +48,40 @@ export default function Dashboard() {
 
         if (response) {
             window.location.reload();
-          } else {
-              alert("Error");
-          }
-        
+        } else {
+            alert("Error");
+        }
+
 
 
     };
 
-   
+
 
     const handleCheck = event => {
-        Array.prototype.remove = function() {
-            var what, a = arguments, L = a.length, ax;
-            while (L && this.length) {
-                what = a[--L];
-                while ((ax = this.indexOf(what)) !== -1) {
-                    this.splice(ax, 1);
-                }
-            }
-            return this;
-        };
-       if (idToDelete.includes(event.target.id)) {
-            idToDelete.remove(event.target.id);
-            console.log(...idToDelete)
-            
-        } else {
-            idToDelete.push(event.target.id);
-            console.log(idToDelete)
-        };
+        setID(event.target.id)
+        // Array.prototype.remove = function () {
+        //     var what, a = arguments, L = a.length, ax;
+        //     while (L && this.length) {
+        //         what = a[--L];
+        //         while ((ax = this.indexOf(what)) !== -1) {
+        //             this.splice(ax, 1);
+        //         }
+        //     }
+        //     return this;
+        // };
+        // if (idToDelete.includes(event.target.id)) {
+        //     idToDelete.remove(event.target.id);
+
+
+        // } else {
+        //     idToDelete.push(event.target.id);
+        //     console.log(idToDelete)
+
+        // };
     }
-       
-      
+
+
 
     return (
         <div className="flex flex-col min-h-screen bg-black font-sans font-extralight">
@@ -129,12 +131,22 @@ export default function Dashboard() {
                                             <td className="whitespace-nowrap py-4 px-3 text-sm ">{post.email}</td>
                                             <td className="whitespace-nowrap py-4 px-3 text-sm ">{post.message}</td>
                                             <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6 md:pr-0">
-                                            <input
-                                                    id={post.id}
-                                                    type="checkbox"
-                                                    className="focus:ring-2 focus:ring-[#023368] focus:ring-offset-2 mr-4 space-x-4 h-4 w-4 border-gray-300 rounded"
-                                                    onClick={handleCheck}
-                                                />
+                                                {
+                                                    ID ? <button
+                                                        type="button"
+                                                        onClick={handleSubmit}
+                                                        className=" mr-4 space-x-4 hover:text-indigo-900">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                                                        </svg>
+
+                                                    </button> : (<input
+                                                        id={post.id}
+                                                        type="checkbox"
+                                                        className="focus:ring-2 focus:ring-[#023368] focus:ring-offset-2 mr-4 space-x-4 h-4 w-4 border-gray-300 rounded"
+                                                        onClick={handleCheck}
+                                                    />)
+                                                }
                                             </td>
                                         </tr>
                                     ))}
@@ -143,15 +155,6 @@ export default function Dashboard() {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-end pt-4 ">
-          <button
-            type="button"
-            onClick={handleSubmit}
-            className="rounded-md border border-transparent bg-[#023368] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-black focus:outline-none  sm:w-auto"
-          >
-            Delete Selected
-          </button>
-        </div>
             </div>
             <Footer />
         </div>
