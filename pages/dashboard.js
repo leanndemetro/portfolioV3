@@ -86,7 +86,7 @@ export default function Dashboard() {
     return (
         <div className="flex flex-col min-h-screen bg-black font-sans font-extralight">
             <Nav />
-            <div className="py-12 text-white bg-black px-4 sm:px-6 lg:px-20">
+            <div className="h-screen py-12 text-white bg-black px-4 sm:px-6 lg:px-20">
                 <div className="sm:flex sm:items-center">
                     <div className="sm:flex-auto">
                         <h1 className="text-xl font-semibold">Users</h1>
