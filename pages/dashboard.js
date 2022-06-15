@@ -8,7 +8,7 @@ import Footer from "../components/footer";
 
 export default function Dashboard() {
     const [posts, setPosts] = useState([]);
-    const [ID, setID] = useState("");
+    const [idToDelete, setID] = useState("");
 
 
 
@@ -28,7 +28,7 @@ export default function Dashboard() {
         event.preventDefault();
         var data = JSON.stringify({
             query: `mutation{
-        deletecontactSubmission(id: ${ID} ){
+        deletecontactSubmission(id: ${idToDelete} ){
          id
         }
         }`,
@@ -46,10 +46,10 @@ export default function Dashboard() {
 
         const response = await axios(config);
 
-        if (response) {
-            window.location.reload();
+        if (response.status !== 200) {
+            alert("Error deleting contact submission");
         } else {
-            alert("Error");
+            window.location.reload();
         }
 
 
@@ -58,27 +58,16 @@ export default function Dashboard() {
 
 
 
-    const handleCheck = event => {
+    const handleClick = event => {
         setID(event.target.id)
-        // Array.prototype.remove = function () {
-        //     var what, a = arguments, L = a.length, ax;
-        //     while (L && this.length) {
-        //         what = a[--L];
-        //         while ((ax = this.indexOf(what)) !== -1) {
-        //             this.splice(ax, 1);
-        //         }
-        //     }
-        //     return this;
-        // };
-        // if (idToDelete.includes(event.target.id)) {
-        //     idToDelete.remove(event.target.id);
+        var result = confirm("Delete Forever?");
+        if (result) {
+            handleSubmit(event);
+        } else {
+            console.log("nope")
+        }
 
 
-        // } else {
-        //     idToDelete.push(event.target.id);
-        //     console.log(idToDelete)
-
-        // };
     }
 
 
@@ -131,22 +120,14 @@ export default function Dashboard() {
                                             <td className="whitespace-nowrap py-4 px-3 text-sm ">{post.email}</td>
                                             <td className="whitespace-nowrap py-4 px-3 text-sm ">{post.message}</td>
                                             <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6 md:pr-0">
-                                                {
-                                                    ID ? <button
-                                                        type="button"
-                                                        onClick={handleSubmit}
-                                                        className=" mr-4 space-x-4 hover:text-indigo-900">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                                            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                                                        </svg>
+                                                <button
+                                                    type="button"
+                                                    onClick={handleClick}
+                                                    id={post.id}
+                                                    className=" mr-4 space-x-4 hover:text-indigo-900">
+                                                    X
 
-                                                    </button> : (<input
-                                                        id={post.id}
-                                                        type="checkbox"
-                                                        className="focus:ring-2 focus:ring-[#023368] focus:ring-offset-2 mr-4 space-x-4 h-4 w-4 border-gray-300 rounded"
-                                                        onClick={handleCheck}
-                                                    />)
-                                                }
+                                                </button>
                                             </td>
                                         </tr>
                                     ))}
