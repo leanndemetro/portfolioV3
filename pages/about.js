@@ -51,8 +51,8 @@ export default function About() {
                         </ul>
                     </div>
                 </div>
-                <div className="md:pt-6 pt-6 pb-0  grid grid-cols-3 gap-8 ">
-                    <div className="space-y-5 col-span-2 sm:space-y-4">
+                <div className="md:pt-6 pt-6 pb-0  md:grid md:grid-cols-3 gap-8 ">
+                    <div className="space-y-5 md:col-span-2 sm:space-y-4">
                 <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Technical Writing</h2>
                 <p className="text-base text-white">
                     Alyssa has a passion for writing technical documentation and tutorials. She has a background in writing technical documentation for large companies, and has spearheaded a number of projects, including the creation of a documentation website and system for a well known global company.
