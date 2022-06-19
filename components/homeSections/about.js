@@ -55,7 +55,7 @@ export default function About() {
                     <div className="text-base text-white">
                     Please see my second website containg my tutorials at 
                     <br></br>
-                    <a className="pt-12 hover:italic text-2xl "target="__blank" href="https://tutorials-alyssademetro.vercel.app">tutorials-alyssademetro.vercel.app</a>
+                    <a className="pt-12 hover:italic text-2xl "target="__blank" href="https://alyssademetro-tutorials.vercel.app/">alyssademetro-tutorials.vercel.app</a>
                     </div>
                 </div>
                 </div>
